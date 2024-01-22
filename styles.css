@@ -1,0 +1,213 @@
+body{
+    background: url(/assets/wp2065394-rick-and-morty-4k-wallpapers.png) no-repeat center center fixed;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+.main-container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#rick-and-morty-logo{
+    cursor: pointer;
+}
+.header-rickandmorty{
+    background-color: rgba(240, 248, 255, 0.16);
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.header-rickandmorty nav {
+    flex-grow: 1; 
+}
+.header-rickandmorty nav ul{
+    list-style: none;
+    display: flex; 
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.header-rickandmorty li{
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 3px 2px 4px #ff01c1;
+}
+.nav-header:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.page{
+    background-color: rgba(245, 245, 245, 0.278);
+    margin-top: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.page-main{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    flex: 1;
+}
+#principal-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#principal-content span{
+    font-size: 150%;
+    color: #fff;
+}
+#home-img{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 650px;
+    border-radius: 12px;
+}
+#gallery-home-characters{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 60px;
+}
+.character-home:hover{
+    cursor: pointer;
+}
+#gallery-home-characters div{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+    height: 160px;
+    width: 120px;
+}
+#gallery-home-characters img{
+    height: 85%;
+}
+.main-characters-name{
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 20%;
+}
+.letter-container {
+    display: flex;
+    justify-content: center;
+}
+#category-page_alphabet-shortucs {
+    display: none;
+    list-style:none;
+    padding-left: 0;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.letter{
+    color: #ffb388;
+    font-size: 130%;
+    cursor: pointer;
+}
+.letter:hover{
+    color: #533b2d;
+    text-decoration: underline;
+}
+.characters-container{
+    display: flex;
+}
+#characters-render{
+    flex: 1;
+    margin-top: 6px;
+    margin-left: 50px;
+    margin-bottom: 18px;
+}
+#character-details {
+    flex-basis: 40%; /* Ancho fijo para la segunda columna (character-details) */
+    padding: 20px;
+    width: 25%;
+    padding: 20px;
+}
+#character-details-show{
+    border-radius: 12px;
+}
+#character-details img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+.character {
+    display: flex;
+    width: 260px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+/*     border:1px solid black; */
+    color: #fff;
+}
+.character img{
+    cursor: pointer;
+}
+.character h2{
+    padding-left: 12px;
+    margin: auto;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+.character  img{
+    width: 25%; 
+    height: 100%; 
+    margin-top: auto
+    
+}
+.character-details-show{
+    display: none;
+    width: 260px;
+    height: auto;
+    border:1px solid rgb(255, 255, 255);
+    background-color: #5d0883;
+    color: #ffffff;
+    position: sticky;
+    top: 5rem;
+    box-shadow: 0px 4px 8px rgb(77, 76, 76);
+}
+#character-details-name{
+    font-size: 18px;
+    text-align: center;
+}
+.character-data{
+    display: flex;
+    background-color: rgba(245, 245, 245, 0.278);
+    border: 1px solid #ccc;
+}
+.data-character-label{
+    font-size: 12px;
+    flex-basis: 60%;
+    text-align:right;
+    padding-right: 5px;
+    color: #ffb388;
+}
+.data-character-value{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 14px;
+    border-left: 1px solid #ccc;
+}
+#character-data-bottom{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}

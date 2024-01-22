@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Mroty Wiky</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header-rickandmorty">
+        <img
+          id="rick-and-morty-logo"
+          src="/assets/rick-and-morty-logo.png"
+          alt="rick-and-morty-logo"
+        />
+        <nav>
+          <ul>
+            <li id="characters" class="nav-header">Characters</li>
+            <li id="locations" class="nav-header">Locations</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="page">
+        <div id="page-main" class="page-main">
+          <div id="content">
+            <!-- principal page -->
+            <div id="principal-content">
+              <span>Welcome to the Rick and Morty Wiki!</span>
+              <img id="home-img" src="/assets/chracters_page_principal.JPG" alt="home-img">
+              <span>Main Characters</span>
+              <div id="gallery-home-characters">
+                <div class="character-home">
+                  <img src="/assets/beth.JPEG" alt="img-beth">
+                  <div class="main-characters-name">
+                    <span>Beth Smith</span>
+                  </div>                  
+                </div>
+                <div class="character-home">
+                  <img src="/assets/summer.JPEG" alt="img-summer">
+                  <div class="main-characters-name">
+                    <span>Summer Smith</span>
+                  </div>
+                </div>
+                <div class="character-home">
+                  <img src="/assets/rick.jpeg" alt="img-rick">
+                  <div class="main-characters-name">
+                    <span>Rick Sanchez</span>
+                  </div>
+                </div>
+                <div class="character-home">
+                  <img src="/assets/morty.JPEG" alt="img-morty">
+                  <div class="main-characters-name">
+                    <span>Morty Smith</span>
+                  </div>
+                </div>
+                <div class="character-home">
+                  <img src="/assets/jerry.JPEG" alt="img-rick">
+                  <div class="main-characters-name">
+                    <span>Jerry Smith</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="characters-page">
+              <p class="category-page_total-number"></p>
+              <ul id="category-page_alphabet-shortucs" class="letter-container">
+                <li class="letter">A</li>
+                <li class="letter">B</li>
+                <li class="letter">C</li>
+                <li class="letter">D</li>
+                <li class="letter">E</li>
+                <li class="letter">F</li>
+                <li class="letter">G</li>
+                <li class="letter">H</li>
+                <li class="letter">I</li>
+                <li class="letter">J</li>
+                <li class="letter">K</li>
+                <li class="letter">L</li>
+                <li class="letter">M</li>
+                <li class="letter">N</li>
+                <li class="letter">O</li>
+                <li class="letter">P</li>
+                <li class="letter">Q</li>
+                <li class="letter">R</li>
+                <li class="letter">S</li>
+                <li class="letter">T</li>
+                <li class="letter">U</li>
+                <li class="letter">V</li>
+                <li class="letter">W</li>
+                <li class="letter">X</li>
+                <li class="letter">Y</li>
+                <li class="letter">Z</li>
+              </ul>
+              <div class="characters-container">
+                <div id="characters-render"></div>
+                <div id="character-details">
+                  <div
+                    id="character-details-show"
+                    class="character-details-show"
+                  >
+                    <h2 id="character-details-name">Rick Sanchez</h2>
+                    <img
+                      id="selected-character-image"
+                      src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                      alt="Imagen del Personaje"
+                    />
+                    <div class="character-data">
+                      <h3 class="data-character-label" id="species-label">SPECIES</h3>
+                      <div id="species-data" class="data-character-value">
+                        q
+                      </div>
+                    </div>
+                    <div class="character-data">
+                      <h3 class="data-character-label" id="status-label">STATUS</h3>
+                      <div id="status-data" class="data-character-value">
+                        live
+                      </div>
+                    </div>
+                    <div class="character-data" id="last-known-location">
+                      <h3 class="data-character-label">LAST KNOWN LOCATION</h3>
+                      <div
+                        id="last-location-data"
+                        class="data-character-value"
+                      >a</div>
+                    </div>
+                    <div class="character-data" id="character-data-bottom">
+                      <h3 class="data-character-label">FIRST SEEN IN</h3>
+                      <div id="first-seen-data" class="data-character-value">
+                        q
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
